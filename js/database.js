@@ -47,7 +47,7 @@ const data = [{
   },
   {
     id: 6,
-    img: "../img/o mistério da flor.jpg",
+    img: "../img/O mistério da flor.jpg",
     nameItem: "O mistério da flor",
     description: "O que dizer.....",
     value: 250,
