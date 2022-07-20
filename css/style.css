@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto';
     font-size: 16px;
     overflow: overlay;
-    background-image:url(https://img.freepik.com/vrije-vector/groene-abstracte-textuurachtergrond-met-waterverf_65186-2633.jpg?w=1380&t=st=1658256500~exp=1658257100~hmac=49433ead5d8f9f1373b527e137d2d8c78e68d236092064e7140ca418d7b5d01d);
+    background-image: url(https://img.freepik.com/vrije-vector/groene-abstracte-textuurachtergrond-met-waterverf_65186-2633.jpg?w=1380&t=st=1658256500~exp=1658257100~hmac=49433ead5d8f9f1373b527e137d2d8c78e68d236092064e7140ca418d7b5d01d);
     background-repeat: repeat-y;
     background-size: cover;
 }
@@ -164,7 +164,7 @@ body::-webkit-scrollbar {
 
 
 .vitrine .lista-vitrine .card .informacoes .preco-btn {
-    display: flex;   
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
@@ -188,7 +188,7 @@ body::-webkit-scrollbar {
 }
 
 .vitrine .lista-vitrine .card .informacoes .preco-btn button::after {
-    content:  "";
+    content: "";
     display: block;
     height: 2px;
     width: 0%;
@@ -250,7 +250,7 @@ body::-webkit-scrollbar {
     color: var(--grey-50);
 }
 
-.pesquisa-carrinho .area-pesquisa  button {
+.pesquisa-carrinho .area-pesquisa button {
     max-width: 96px;
     width: 100%;
     background-color: var(--color-secondary);
@@ -262,19 +262,20 @@ body::-webkit-scrollbar {
     transition: .5s;
 }
 
-.pesquisa-carrinho .area-pesquisa  button:hover {
+.pesquisa-carrinho .area-pesquisa button:hover {
     background-color: #000000;
-} 
+}
 
 .pesquisa-carrinho .carrinho-compras {
     transition: .5s;
 }
 
 .pesquisa-carrinho .carrinho-compras:hover {
-    transform: scale(1.03);
+    transform: scale(1);
+    background-color: transparent;
 }
 
-.pesquisa-carrinho .carrinho-compras .carrinho-compras-title { 
+.pesquisa-carrinho .carrinho-compras .carrinho-compras-title {
     margin-top: 30px;
     height: 50px;
     background-color: var(--color-secondary);
@@ -293,7 +294,7 @@ body::-webkit-scrollbar {
 .pesquisa-carrinho .carrinho-compras .carrinho-compras-produtos {
     min-height: 214px;
     max-height: 329px;
-    background-color: var(--grey-0);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     color: var(--grey-100);
@@ -303,7 +304,7 @@ body::-webkit-scrollbar {
 
 
 
-.pesquisa-carrinho .carrinho-compras .carrinho-compras-produtos .carrinho-vazio-text  {
+.pesquisa-carrinho .carrinho-compras .carrinho-compras-produtos .carrinho-vazio-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,7 +375,7 @@ body::-webkit-scrollbar {
     height: 100%;
 }
 
-.produto-carrinho .categoria-title span, 
+.produto-carrinho .categoria-title span,
 .produto-carrinho .descricao {
     display: none;
 }
@@ -392,7 +393,7 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 
-.produto-carrinho .informacoes, 
+.produto-carrinho .informacoes,
 .produto-carrinho .preco-btn {
     display: flex;
     flex-direction: column;
@@ -428,7 +429,49 @@ body::-webkit-scrollbar {
 }
 
 
-.pesquisa-carrinho .esconder, 
+.pesquisa-carrinho .esconder,
 .pesquisa-carrinho .carrinho-compras .carrinho-compras-produtos .esconder {
     display: none;
+}
+
+.modalContainer {
+
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+}
+
+.modalOpen {
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+    margin-left: 600px;
+}
+
+.imagemModal {
+    width: 500px;
+    height: 500px;
+
+}
+
+.modalClose {
+    display: flex;
+    justify-content: right;
+    margin-left: 500px;
 }

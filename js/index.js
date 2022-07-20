@@ -12,8 +12,8 @@ let cartQtProdutos = 0
 let arrayCarrinho = []
 
 
-header.addEventListener("click", listadoCategorias)
-function listadoCategorias(event, arrayProdutos = data) {
+header.addEventListener("click", listadeCategorias)
+function listadeCategorias(event, arrayProdutos = data) {
     elementoClicado = event.target
 
     if (elementoClicado.tagName == "BUTTON") {
@@ -193,3 +193,6 @@ function pesquisaProduto (event, arrayProdutos = data) {
         }
     }
 }
+// chamar o container modal pro js(query) e o button .
+// click->select img->atribuir src img pro msm img clicada
+//função pra alterar o display do modalContainer para Flex
